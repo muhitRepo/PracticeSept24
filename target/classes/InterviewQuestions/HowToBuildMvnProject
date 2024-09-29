@@ -1,0 +1,55 @@
+Q1. How to Build a Maven project? (Basic)
+
+	Step 1: 
+
+	File--> New--> Other--> Maven Project --> next--> Create simple project --> 
+	Use default location --> GroupId--Artifact  ID --> Finish
+	
+	Step2: 
+
+	Update properties file if needed in POM.XML file with (Apache Mavn compiler properties (https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html))
+	--> paste the properties after </version> in pom.xml file
+	Update the Java version # installed in your machine. 
+	
+	Mac: java --version
+
+	<properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+ 	</properties>
+ 
+ 	Step 3: 
+ 
+ 	Force Update Maven Project: Right on Project name --> Maven--> UpdateProject--> Forced update releases. 
+ 	
+ Q2. What is Pom.xml file? 
+ 	 Ans: It is configuration file for the project. 
+ 	 
+ 	 Optional info (All the codes or dependencies or libraries we write in pom.xml file they gets downloaded in the machine from Maven repository. 
+ 	 That's basically line #1 in pom.xml file.  All dependencies gets downloaded in .m2 files)
+ 	
+ Q3. What is Artifact ID? == It is the Project name (Most IMP)
+ 	 Your compiler or whole java system knows this by this "ProjectName" 
+ 	
+ Q4. What is the GroupID? == Is a Package name 
+ 
+ Q5. How to Update Java of the Maven project? 
+ 
+ 	 Need this Apache Maven properties file and save and update with right JAVA version in the system. 
+ 	  
+ 		<properties>
+    		<maven.compiler.source>1.8</maven.compiler.source>
+    		<maven.compiler.target>1.8</maven.compiler.target>
+ 		</properties>
+ 
+ Q6. How Do I know which java version I have in system? 
+ 
+		For Mac Terminal > type:  (java --version) AND see what version is installed in the system.  
+ 		Windows: go to system properties > Env variables > Path
+ 		Or See in the source folder where it is installed. 
+ 		
+ 		If you have latest version e.g (java 20) in your system, the older version like 17, 14, 8 is covered. 
+ 		But if you call for more latest version it will not work, coz the info is not in the machine. 
+ Q7. 
+ 	
+ 	
