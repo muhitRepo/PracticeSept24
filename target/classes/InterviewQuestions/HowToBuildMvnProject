@@ -50,6 +50,35 @@ Q1. How to Build a Maven project? (Basic)
  		
  		If you have latest version e.g (java 20) in your system, the older version like 17, 14, 8 is covered. 
  		But if you call for more latest version it will not work, coz the info is not in the machine. 
- Q7. 
+ 		
+ Q7. Why do we need Maven project? 
+ 	-Its a project management tool
+ 	-It gives us different types of skeleton for different types of projects.  Like simple java projct, website project, jpa project, api pjct etc.
+ 	-You need diff types of tools in your project: Java, Selenium, TestNG, Junit, cucumber. Who is going to bring those groups?  
+ 	-Mavan manages all those dependencies. 
+ 	-Easy to update dependencies: Easy to update after few years, like java. 
+ 	
+ 	
+ Q8: Explain Mvn structure
+ 
+ 	Project name = PracticeSep24
+ 	
+ 	Src/main/java == this is source code. All the Devs people write code here / business logics 
+ 	this code goes to production
+ 		dataType == is a package name
+ 		NumericData == class name -- class only be created inside the packg
+ 	Src/main/resources == configuration packg
+ 			folder and file should be there. Normally documentation like user manuel so on.
+ 			All the username pwd properties of the app should be there.
+ 			
+ 	Src/test/java -- this is testing code area -> unit test, ui test, api test, dev code/ testig logic
+ 	This code does not go to production.
+ 	Test = package name
+ 	HelloJava== class name -- class only be created inside the pckg
+ 	
+ 	Src/test/resources == config pckg
+ 	test config. 
+ 	
+ 	
  	
  	
